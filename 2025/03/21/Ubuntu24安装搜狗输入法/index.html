@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Ubuntu24安装搜狗输入法 | MeditationLand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="STEP1: 检查你的系统是否支持Fcitx4键盘输入系统  如果这里没有Fcitx4，就在终端用下面的命令安装 12sudo apt updatesudo apt install fcitx  完成后选择Fcitx4，并且在终端输入下面的命令 1sudo cp &#x2F;usr&#x2F;share&#x2F;applications&#x2F;fcitx.desktop &#x2F;etc&#x2F;xdg&#x2F;autostart&#x2F;  STEP2: 安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu24安装搜狗输入法">
+<meta property="og:url" content="https://meditationland.github.io/2025/03/21/Ubuntu24%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/index.html">
+<meta property="og:site_name" content="MeditationLand">
+<meta property="og:description" content="STEP1: 检查你的系统是否支持Fcitx4键盘输入系统  如果这里没有Fcitx4，就在终端用下面的命令安装 12sudo apt updatesudo apt install fcitx  完成后选择Fcitx4，并且在终端输入下面的命令 1sudo cp &#x2F;usr&#x2F;share&#x2F;applications&#x2F;fcitx.desktop &#x2F;etc&#x2F;xdg&#x2F;autostart&#x2F;  STEP2: 安装">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://meditationland.github.io/images/1.png">
+<meta property="og:image" content="https://meditationland.github.io/images/2.png">
+<meta property="og:image" content="https://meditationland.github.io/images/3.png">
+<meta property="article:published_time" content="2025-03-21T15:12:09.000Z">
+<meta property="article:modified_time" content="2025-03-21T15:14:29.779Z">
+<meta property="article:author" content="Qian Neng">
+<meta property="article:tag" content="开发环境">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://meditationland.github.io/images/1.png">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">MeditationLand</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://meditationland.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Ubuntu24安装搜狗输入法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/03/21/Ubuntu24%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2025-03-21T15:12:09.000Z" itemprop="datePublished">2025-03-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Ubuntu24安装搜狗输入法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="STEP1-检查你的系统是否支持Fcitx4键盘输入系统"><a href="#STEP1-检查你的系统是否支持Fcitx4键盘输入系统" class="headerlink" title="STEP1: 检查你的系统是否支持Fcitx4键盘输入系统"></a>STEP1: 检查你的系统是否支持<code>Fcitx4</code>键盘输入系统</h2><p><img src="/../images/1.png"></p>
+<p><img src="/../images/2.png"></p>
+<p>如果这里没有<code>Fcitx4</code>，就在终端用下面的命令安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<p>完成后选择<code>Fcitx4</code>，并且在终端输入下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> /usr/share/applications/fcitx.desktop /etc/xdg/autostart/</span><br></pre></td></tr></table></figure>
+
+<h2 id="STEP2-安装搜狗输入法"><a href="#STEP2-安装搜狗输入法" class="headerlink" title="STEP2: 安装搜狗输入法"></a>STEP2: 安装搜狗输入法</h2><p>到<a target="_blank" rel="noopener" href="https://shurufa.sogou.com/linux">搜狗输入法Linux版</a>下载安装文件。正常情况下你应该选择<code>x86_64</code>版本的下载文件，安装包名称为<code>xxx.deb</code></p>
+<p>在<mark>安装文件路径</mark>打开终端，安装搜狗输入法和相关依赖</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> dpkg -i &lt;package name&gt;</span><br><span class="line"><span class="built_in">sudo</span> apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line"><span class="built_in">sudo</span> apt install libgsettings-qt1</span><br></pre></td></tr></table></figure>
+
+<p>重启计算机，安装完成</p>
+<h2 id="STEP3-问题解决"><a href="#STEP3-问题解决" class="headerlink" title="STEP3: 问题解决"></a>STEP3: 问题解决</h2><p>首先检查输入法配置中是否有搜狗输入法，如果没有就点击左下的<code>+</code>号添加一下</p>
+<p><img src="/../images/3.png"></p>
+<p>如果到这一步，在文本框输入模式下按<code>Ctrl</code>+<code>Space</code>还不能切换搜狗输入法，或者出现输入法频繁闪烁无法正常输入的情况，就在终端编辑<code>~/.xinputrc</code>文件，在末尾添加一行内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> QT_QPA_PLATFORM=xcb</span><br></pre></td></tr></table></figure>
+
+<p>之后重启计算机。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://meditationland.github.io/2025/03/21/Ubuntu24%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/" data-id="cm8ix9ht30000je023dvbgaaw" data-title="Ubuntu24安装搜狗输入法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" rel="tag">开发环境</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/03/20/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">从0开始的程序员自救指南 - 1</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97/" rel="tag">从0开始的程序员自救指南</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" rel="tag">开发环境</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">三月 2025</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/03/21/Ubuntu24%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Ubuntu24安装搜狗输入法</a>
+          </li>
+        
+          <li>
+            <a href="/2025/03/20/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97-1/">从0开始的程序员自救指南 - 1</a>
+          </li>
+        
+          <li>
+            <a href="/2025/03/20/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97-0/">从0开始的程序员自救指南 - 0</a>
+          </li>
+        
+          <li>
+            <a href="/2025/03/17/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/">使用Hexo在Github Pages上搭建博客的方法</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Qian Neng<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
